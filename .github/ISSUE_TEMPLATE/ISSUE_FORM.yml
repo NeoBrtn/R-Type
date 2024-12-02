@@ -10,6 +10,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+
   - type: input
     id: contact
     attributes:
@@ -18,6 +19,7 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+
   - type: textarea
     id: what-happened
     attributes:
@@ -33,6 +35,33 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: In what environment did you run our software when you encountered the bug ?
+      placeholder: ex. Ubuntu 22.04.5 LTS in Windows 11 WSL
+    validations:
+      required: false
+
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How can anyone reproduce this bug ?
+      description: Tell us how we can reproduce this bug by precising steps leads to it.
+      placeholder: placeholder
+      value: "Go to peach's castle, start spamming backward long jump in the stairs."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+          
   - type: checkboxes
     id: terms
     attributes:
